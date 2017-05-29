@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family:monospace;
+}
+html, body, #mapdiv {
+  height: 100%;
+  width: 100%;
+}
+#content{
+  position: absolute;
+  top:0;
+  left:0;
+  background: rgba(54, 25, 25, .5);
+  color:#fff;
+  z-index: 1000;
+  width:100%;
+
+}
+#content table{
+  width: 100%;
+}
+#content table caption{
+  font-size: 1.3em;
+  padding: 5px;
+  background: rgba(54, 25, 25, .8);
+}
+#content td.big{
+  text-align: right;
+}
+#content span.big{
+  font-size: 3em;
+  border:1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#shortinfo td{
+  height: 18px;
+}
+
+div.chart{
+  width:100%;
+}
+
+#infodiv{
+  position: absolute;
+  top:0;
+  left:0px;
+  width: 100%;
+  z-index: 1001;
+  min-height: 600px;
+}
+
+#infodiv .inner{
+  border:2px solid #444;
+  background-color: #4ECAC2;
+  padding:3px;
+}
+#infodiv .head{
+  float:left;
+}
+#infoclose{
+  float:right;
+}
+#return_cp{
+  position:absolute;
+  bottom:5px;
+  font-size:1.5em;
+  left:3px;
+  border:1px solid #aaa;
+  background-color:#eee;
+  padding:3px 7px;
+  z-index:1002;
+  cursor: hand;
+}
+
+#debug_log{
+  position: fixed;
+  bottom:0px;
+  left: 0px;
+  background-color: #fff;
+  overflow: auto;
+  height: 100px;
+  border-top:1px solid #000;
+  z-index: 1005;
+  width: 100%;
+  max-height: 100px;
+  cursor: pointer;
+}
